@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://mbdb:281002@cluster0.da9el.mongodb.net/?retryWrites=true&w=majority"
+const uri = "mongodb+srv://${Usuário}:${Senha}@cluster0.da9el.mongodb.net/?retryWrites=true&w=majority"
 
 MongoClient.connect(uri, (err, client) => {
     if(err) return console.log(err)
